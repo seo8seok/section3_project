@@ -1,0 +1,55 @@
+<!-- <html>
+  <head>
+    <title>
+      New HTML Page
+    </title>
+
+    
+  </head>
+  <body>
+    <h1>Section3 Project Web Flask</h1>
+    <button type="button"> 
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Section3 Project Web Flask(주식 상승 or 하강 예측)</h1>
+    <h2>현재는 KODEX 레버리지만 예측합니다. </h2>
+    <button type="button" class="btn btn-primary" onclick="location.href= 'http://127.0.0.1:5000/predict';">셀레니움으로 최근데이터 가져와 확인하기</button>
+    <!-- <button type="button" onclick="location.href='링크주소';"> 버튼내용 </button> -->
+    <form action = "http://localhost:5000/manual" method = "POST">
+      <p>종가 <input type = "number" name = "1"  value="15335"/></p>
+      <p>거래량 <input type = "number" name = "2" value="17096790"/></p>
+      <p>기관순매량 <input type = "number" name = "3" value="869747" /></p>
+      <p>외국순매량 <input type ="number" name = "4" value="870974"/></p>
+      <p>외국인보유주수 <input type ="number" name = "5" value="1900280" /></p>
+      <p>보유율 <input type ="number" name = "6" value="1"/></p>
+      <p>고객예탁금 <input type ="number" name = "7" value="546814" /></p>
+      <p>고객예탁금변동 <input type ="number" name = "8" value="1537"/></p>
+      <p>신용잔고 <input type ="number" name = "9" value="192712"/></p>
+      <p>신용잔고변동 <input type ="number" name = "10" value="1090"/></p>
+      <p>주식형 <input type ="number" name = "11" value="947407"/></p>
+      <p>주식형변동 <input type ="number" name = "12" value="36"/></p>
+      <p>혼합형 <input type ="number" name = "13" value="304579" /></p>
+      <p>혼합형변동 <input type ="number" name = "14" value="4831"/></p>
+      <p>채권형 <input type ="number" name = "15" value="1278837"/></p>
+      <p>채권형변동 <input type ="number" name = "16" value="3236"/></p>
+
+      <p><input type = "submit" value = "입력값으로 확인하기" /></p>
+   </form>
+
+ 
+
+  </body>
+</html>

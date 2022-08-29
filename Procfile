@@ -1,1 +1,1 @@
-web: gunicorn --workers=2 stockpred:app
+web: gunicorn --workers=4 stockpred:app

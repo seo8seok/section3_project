@@ -23,7 +23,7 @@ def index():
     """
     return render_template("main/main.html"), 200
 
-@app.route("/predict")
+@app.route("/predict/")
 def predict () : 
     driver = webdriver.Chrome(CPATH)
     driver.get(f"https://finance.naver.com/item/frgn.naver?code=122630&page=1")
@@ -89,7 +89,7 @@ def predict () :
     return  render_template("main/predict.html" , result = result, day =day ) , 200 
 
 
-@app.route("/manual", methods = ["POST","GET"])
+@app.route("/manual/", methods = ["POST","GET"])
 def manual_pred () :
     if request.method == 'POST':
         formdata = request.form
